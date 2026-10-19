@@ -1,5 +1,21 @@
 # @hypequery/datasets
 
+## 0.24.0
+
+### Minor Changes
+
+- 9d97163: Add semantic client contract v1 validation, canonical identities and strict HTTP/MCP query validation. Compile typed endpoint/tool schemas from public descriptors and test Python/TypeScript with the required shared conformance family. Existing catalog schemas keep their defaults.
+
+### Patch Changes
+
+- aa10003: Exclude internal runtime and type-test programs from published package tarballs while preserving public runtime and declaration exports.
+- 87ed4ad: Route every ClickHouse-specific SQL spelling in the datasets planner (time grains and arithmetic, timezone conversion, time-measure guards and series expansion, window aggregates, measure-filter literals, formula rendering and row packing) through the internal datasets SQL dialect. Generated ClickHouse SQL is unchanged. A custom `datasetSqlDialect.quoteIdentifier` hook now also applies to time-measure (window and shift) queries.
+
+  `GRAIN_FUNCTIONS` is deprecated: grain SQL is engine-specific and no longer read by the planner. Use `SUPPORTED_TIME_GRAINS` to enumerate grains.
+
+- Updated dependencies [9d97163]
+  - @hypequery/protocol@0.21.0
+
 ## 0.23.1
 
 ### Patch Changes

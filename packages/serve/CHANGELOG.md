@@ -1,5 +1,14 @@
 # @hypequery/serve
 
+## 0.21.1
+
+### Patch Changes
+
+- Updated dependencies [9d97163]
+- Updated dependencies [aa10003]
+- Updated dependencies [87ed4ad]
+  - @hypequery/datasets@0.24.0
+
 ## 0.21.0
 
 ### Minor Changes
