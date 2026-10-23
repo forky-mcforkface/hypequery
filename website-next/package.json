@@ -42,7 +42,7 @@
     "eslint": "^10",
     "eslint-config-next": "16.4.0",
     "fumadocs-mdx": "^15.4.7",
-    "next": "16.4.0",
+    "next": "16.4.2",
     "rehype-code-titles": "^1.2.1",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.1",
